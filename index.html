@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Number Guessing Game</title>
+    <link rel="shortcut icon" type="image/png" href="favicon1.png">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide">
+    <link rel="stylesheet" href="styles/site.css">
+</head>
+
+<body>
+
+    <section id="section1">
+            <h1>Number Guessing Game</h1>
+            <div class="setup">
+                <button  id="setMax" onclick="start1()">Start</button>
+            </div>
+    </section>
+
+    <section id="section2">
+        <div id="game">
+            <h2 id="between">Guess The Number Between <br> <b>1</b> and <b id="max"></b></h2>
+            <div id="result"></div>
+            <input type="text" id="num" placeholder="Enter number">
+            <div id="message"></div>
+            <button id="submit" onclick="play()">Submit</button>
+            <button id="again" onclick="restart()" style="display: none;">Play again</button>
+            <div class="prev">
+                <h5>Previous values</h5>
+                <ul id="list"></ul>
+            </div>
+            <div id="rest">
+                <span id="remaining"></span> Guesses Left
+            </div>
+        </div>
+    </section>
+
+</body>
+<script src="scripts/main.js"></script>
+
+</html>
